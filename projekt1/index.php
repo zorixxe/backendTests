@@ -29,9 +29,29 @@ include "header.php"
         //phpinfo();
 
         //uppg1 
-        print("<p>server is running on port" . $_SERVER['SERVER_PORT'] . ", which is usual on php and apache")
+        print("<p>server is running on port" . $_SERVER['SERVER_PORT'] . ", which is usual on php and apache</p>")
         ?>
 
+
+        <article>
+        <?php 
+        //uppg2
+    
+        $veckodagar = array("Måndag","Tisdag","Onsdag","Torsdag","Fredag","Löradag","Söndag");
+        $datum = date("d.M.Y");
+        print("<p>dagens datum är: ".$datum) . "</p>";
+        
+        print("<p>dagens nummer är " . date("m") . "</p>");
+
+        print("<p>veckodag nummer 01 betyder " . $veckodagar[0] . "</p>");
+
+        print_r($veckodagar);
+
+        
+
+
+        ?>
+</article>
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
                 <h2>Bloggen - Inlägg 1</h2>
